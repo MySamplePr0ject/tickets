@@ -1,0 +1,22 @@
+server:
+  port: 8081
+
+jwt:
+  secret: nc37wKN07nUFHEAATogx5mNQ7Zu1v7aq9Dmn6eFjSIlPekdf157+PdU64gw7sk8rQiHmo0R5xvcVZxI61Zrj0g==
+  expiration: 3600
+
+#Dev H2 DB
+spring:
+  main:
+    allow-circular-references: true
+  datasource:
+    url: jdbc:h2:mem:mydb
+    username: dev
+    password: password
+    driverClassName: org.h2.Driver
+  jpa:
+    spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
