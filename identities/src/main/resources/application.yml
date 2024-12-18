@@ -3,7 +3,7 @@ server:
 
 jwt:
   secret: nc37wKN07nUFHEAATogx5mNQ7Zu1v7aq9Dmn6eFjSIlPekdf157+PdU64gw7sk8rQiHmo0R5xvcVZxI61Zrj0g==
-  expiration: 3600
+  expiration: 3600000
 
 #Dev H2 DB
 spring:
